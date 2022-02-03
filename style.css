@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: gray;
+}
+#container {
+  width: 800px;
+  height: 800px;
+}
+.flex-row {
+  display: flex;
+}
+.block {
+  background-color: white;
+}
