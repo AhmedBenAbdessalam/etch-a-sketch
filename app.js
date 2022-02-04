@@ -6,7 +6,7 @@ function createGrid(blockResolution = 64) {
   canvas.setAttribute("id", "canvas");
   const container = document.querySelector("#container");
   container.append(canvas);
-  let canvasSize = window.getComputedStyle(canvas).height;
+  let canvasSize = window.getComputedStyle(canvas).width;
   canvasSize = parseInt(canvasSize.replace("px"));
   console.log(canvasSize);
   for (let row = 0; row < blockResolution; row++) {
