@@ -1,16 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate:ital@1&display=swap");
 html {
   box-sizing: border-box;
 }
 body {
-  background-color: gray;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
 #container {
-  width: 800px;
-  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#canvas {
+  width: 600px;
+  height: 600px;
+  padding: 50px;
+  background-color: #e74c3c;
 }
 .flex-row {
   display: flex;
 }
 .block {
   background-color: white;
+  outline: solid 1px black;
+}
+#top-menu {
+  display: flex;
+  gap: 18em;
+  margin: 1em 1em;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+h1 {
+  font-size: 5em;
+  font-family: Mate;
+  font-style: oblique;
+  color: #ecf0f1;
+  margin: 0.2em;
+}
+#color-picker {
+  height: 48px;
+  width: 150px;
+}
+#main {
+  display: flex;
 }
