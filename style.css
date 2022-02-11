@@ -3,6 +3,8 @@ html {
   box-sizing: border-box;
 }
 body {
+  height: 100vh;
+  margin: 0;
   background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
 #container {
@@ -11,9 +13,9 @@ body {
   align-content: center;
 }
 #canvas {
-  width: 600px;
-  height: 600px;
-  padding: 50px;
+  width: 70vmin;
+  height: 70vmin;
+  padding: 5vmin;
   background-color: #e74c3c;
 }
 .flex-row {
@@ -21,13 +23,12 @@ body {
 }
 .block {
   background-color: white;
-  outline: solid 1px black;
+  outline: solid 0.01vmin black;
 }
 #top-menu {
   display: flex;
-  gap: 18em;
-  margin: 1em 1em;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin: 1vmin 20vmin;
 }
 .header {
   display: flex;
